@@ -1,0 +1,16 @@
+.logo {
+  @apply w-min;
+}
+
+.name {
+  @apply flex justify-between font-semibold text-sky-900;
+  padding: 0 2px;
+}
+
+.letter {
+  @apply text-sm leading-none;
+}
+
+.title {
+  @apply xl:text-4xl text-2xl font-bold text-sky-900 leading-none xl:leading-none;
+}

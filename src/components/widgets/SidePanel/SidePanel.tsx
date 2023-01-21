@@ -4,7 +4,7 @@ import { getMenuItems } from './lib/menuItems';
 import styles from './SidePanel.module.css';
 import photo from '../../../assets/img/photo_2023-01-21_23-02-21.jpg';
 import { getDeveloperInfo } from './lib/developerInfo';
-import { TitledField } from '../../../shared/ui';
+import { Logo, TitledField } from '../../../shared/ui';
 
 type Props = {
   onItemClick: (tab: TTabs) => void;
@@ -13,7 +13,7 @@ type Props = {
 function SidePanel({ onItemClick }: Props) {
   return (
     <div className={classNames(styles.sidePanel, 'widget')}>
-      <h1 className={styles.title}>DEVELOPER</h1>
+      <Logo />
       <div className={styles.photoWrapper}>
         <img className={styles.photo} src={photo} alt="Фото разработчика" />
       </div>

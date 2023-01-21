@@ -23,6 +23,10 @@ function getDeveloperInfo() {
       title: 'Опыт',
       text: getExperience()
     },
+    {
+      title: 'Основной стек',
+      text: 'TS, React, Redux, SCSS, Vite'
+    },
   ]
 }
 

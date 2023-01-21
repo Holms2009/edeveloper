@@ -1,0 +1,1 @@
+export const splitDeveloperName = ['E', 'V', 'G', 'E', 'N'];
