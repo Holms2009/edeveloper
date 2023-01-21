@@ -1,0 +1,7 @@
+.app {
+  @apply px-7 py-9 h-screen flex box-border bg-sky-900;
+}
+
+.content {
+  @apply p-10 ml-10 w-full shadow-xl shadow-gray-800;
+}

@@ -1,0 +1,1 @@
+type TTabs = 'projects' | 'skills' | 'contacts';

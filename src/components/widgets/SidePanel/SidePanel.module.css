@@ -1,0 +1,28 @@
+.sidePanel {
+  @apply xl:px-6 px-4 xl:pt-6 pt-4 max-w-min h-full shadow-xl shadow-gray-800;
+}
+
+.title {
+  @apply xl:text-4xl text-2xl font-bold text-sky-900;
+}
+
+.photoWrapper {
+  @apply mt-3 w-full aspect-square grayscale transition-all duration-300 rounded-lg overflow-hidden;
+  @apply hover:grayscale-0 hover:shadow-md hover:shadow-gray-800;
+}
+
+.photo {
+  @apply w-full h-full object-cover;  
+}
+
+.info {
+  @apply mt-3 flex flex-col gap-3;
+}
+
+.menuList {
+  @apply xl:text-xl text-sm mt-16 flex flex-col xl:gap-2 gap-1 font-medium text-white;
+}
+
+.menuItem {
+  @apply cursor-pointer hover:underline;
+}
