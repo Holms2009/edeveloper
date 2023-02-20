@@ -17,9 +17,7 @@
 
 .titleWrapper {
   @apply h-full w-12 absolute top-0 left-0 flex flex-col-reverse cursor-pointer;
-  @apply shadow-md shadow-gray-800;
-
-  background: linear-gradient(-45deg, rgb(3,105,161) 30%, rgb(243, 244, 246) 40%)
+  @apply bg-gradient-to-t from-sky-700 via-sky-700 to-sky-600 shadow-md shadow-gray-800;
 }
 
 .tabTitle {
