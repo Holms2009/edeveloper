@@ -10,9 +10,23 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <SidePanel onItemClick={setTab} />
-      <div className={classNames(styles.content, 'widget')}>
-
+      <SidePanel />
+      <div className={styles.content}>
+        <div className={classNames(styles.tab, 'widget', {[styles.tab_closed]: tab !== 'skills'})}>
+          <div className={styles.titleWrapper} onClick={() => setTab('skills')}>
+            <h2 className={styles.tabTitle}>Навыки</h2>
+          </div>
+        </div>
+        <div className={classNames(styles.tab, 'widget', {[styles.tab_closed]: tab !== 'projects'})}>
+          <div className={styles.titleWrapper} onClick={() => setTab('projects')}>
+            <h2 className={styles.tabTitle}>Проекты</h2>
+          </div>
+        </div>
+        <div className={classNames(styles.tab, 'widget', {[styles.tab_closed]: tab !== 'contacts'})}>
+          <div className={styles.titleWrapper} onClick={() => setTab('contacts')}>
+            <h2 className={styles.tabTitle}>Контакты</h2>
+          </div>
+        </div>
       </div>
     </div>
   )
