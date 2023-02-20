@@ -16,7 +16,7 @@
 }
 
 .menuList {
-  @apply xl:text-xl text-sm mt-16 flex flex-col xl:gap-2 gap-1 font-medium text-white;
+  @apply mt-8 flex flex-col gap-1 text-sm xl:text-xl font-medium text-white;
 }
 
 .menuItem {

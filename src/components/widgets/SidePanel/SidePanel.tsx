@@ -1,9 +1,10 @@
 import classNames from 'classnames';
-import { getMenuItems } from './lib/menuItems';
 
 import styles from './SidePanel.module.css';
-import photo from '../../../assets/img/photo_2023-01-21_23-02-21.jpg';
+
 import { getDeveloperInfo } from './lib/developerInfo';
+import { getMenuItems } from './lib/menuItems';
+import photo from '../../../assets/img/photo_2023-01-21_23-02-21.jpg';
 import { Logo, TitledField } from '../../../shared/ui';
 
 type Props = {
@@ -18,9 +19,11 @@ function SidePanel({ onItemClick }: Props) {
         <img className={styles.photo} src={photo} alt="Фото разработчика" />
       </div>
       <div className={styles.info}>
-        {getDeveloperInfo().map((field, index) => (
-          <TitledField {...field} key={index} />
-        ))}
+        {
+          getDeveloperInfo().map((field, index) => (
+            <TitledField {...field} key={index} />
+          ))
+        }
       </div>
       <nav className={styles.menuList}>
         {

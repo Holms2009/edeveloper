@@ -1,5 +1,5 @@
 .titledField {
-  @apply pb-1 flex flex-col gap-1 border-b-2 border-sky-900;
+  @apply pb-1 flex flex-col gap-1 border-b-2 last:border-b-0 border-sky-900;
 }
 
 .title {
