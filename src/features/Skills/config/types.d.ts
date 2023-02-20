@@ -1,0 +1,1 @@
+type TSkill = { title: string, rating: number };

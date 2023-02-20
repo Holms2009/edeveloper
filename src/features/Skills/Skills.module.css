@@ -1,0 +1,15 @@
+.skills {
+  @apply h-full flex flex-col overflow-auto;
+}
+
+.skills::-webkit-scrollbar {
+  display: none;
+}
+
+.skillWrapper {
+  @apply w-full;
+}
+
+.skillWrapper:not(:first-child) {
+  @apply mt-6;
+}

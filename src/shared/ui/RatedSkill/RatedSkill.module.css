@@ -1,0 +1,15 @@
+.ratedSkill {
+  @apply w-full flex flex-col;
+}
+
+.title {
+  @apply text-gray-100 text-xl;
+}
+
+.ratingWrapper {
+  @apply w-full h-2 mt-1 rounded-md overflow-hidden bg-sky-900;
+}
+
+.rating {
+  @apply h-full rounded-md bg-gray-100;
+}
