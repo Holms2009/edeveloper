@@ -3,11 +3,13 @@
 }
 
 .title {
-  @apply text-gray-100 text-xl;
+  @apply text-gray-100 text-lg;
+  @apply md:text-xl;
 }
 
 .ratingWrapper {
-  @apply w-full h-2 mt-1 rounded-md overflow-hidden bg-sky-900;
+  @apply w-full h-[3px] mt-[1px] rounded-[1.5px] overflow-hidden bg-sky-900;
+  @apply md:h-2 md:mt-1 md:rounded-md;
 }
 
 .rating {
