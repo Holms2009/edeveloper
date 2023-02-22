@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 
 import styles from './SidePanel.module.css';
+import photo from '../../assets/img/photo_2023-01-21_23-02-21.jpg';
 
 import { getDeveloperInfo } from './lib/developerInfo';
-import photo from '../../../assets/img/photo_2023-01-21_23-02-21.jpg';
-import { Logo, TitledField } from '../../../shared/ui';
+import { Logo, TitledField } from '../../shared/ui';
 
 function SidePanel() {
   return (

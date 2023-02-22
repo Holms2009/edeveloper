@@ -1,5 +1,5 @@
 import { differenceInMonths, differenceInYears } from 'date-fns';
-import { getNumeral } from '../../../../shared/lib/utils';
+import { getNumeral } from '../../../shared/lib/utils';
 
 function getDeveloperInfo() {
   return [

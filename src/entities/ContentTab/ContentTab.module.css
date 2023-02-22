@@ -1,0 +1,40 @@
+.tab {
+  @apply px-4 pt-14 pb-7 max-h-[1000px] shadow-xl shadow-gray-800 relative overflow-hidden grow;
+  @apply transition-all duration-300;
+  @apply md:px-8 md:pt-20 md:pb-0;
+  @apply lg:max-h-full lg:p-12;
+}
+
+.tab_closed {
+  @apply max-h-0 py-5;
+  @apply md:py-6;
+  @apply lg:px-6 lg:py-12 lg:grow-0 lg:max-h-full;
+}
+
+.tabContent {
+  @apply transition-all duration-300;
+  @apply lg:px-6 lg:max-w-[1920px] lg:max-h-full;
+}
+
+.tab_closed .tabContent {
+  @apply max-h-0;
+  @apply lg:px-0 lg:max-w-0;
+}
+
+.titleWrapper {
+  @apply w-full px-3 py-2 absolute top-0 left-0 flex flex-col-reverse;
+  @apply bg-sky-600  shadow-md shadow-gray-800;
+  @apply md:px-4 md:bg-gradient-to-t md:from-sky-700 md:via-sky-700 md:to-sky-600;
+  @apply lg:h-full lg:w-12 lg:p-0;
+}
+
+.tab_closed .titleWrapper {
+  @apply cursor-pointer;
+}
+
+.tabTitle {
+  @apply z-10 select-none;
+  @apply text-xl text-sky-900 font-semibold;
+  @apply md:text-2xl;
+  @apply lg:-rotate-90 lg:mb-10 lg:text-3xl;
+}
