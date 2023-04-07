@@ -12,7 +12,7 @@
 }
 
 .tabContent {
-  @apply h-full transition-all duration-300 overflow-y-scroll;
+  @apply h-full transition-all duration-300 max-lg:overflow-y-auto;
   @apply lg:px-6 lg:max-w-[1920px] lg:max-h-full;
 }
 
