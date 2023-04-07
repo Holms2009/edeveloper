@@ -1,6 +1,7 @@
 .skills {
-  @apply h-fit flex flex-col;
-  @apply md:h-full;
+  @apply h-fit grid grid-cols-2 gap-x-20 gap-y-10;
+  @apply max-lg:grid-cols-1 max-lg:gap-y-7;
+  @apply max-md:gap-y-5;
 }
 
 .skills::-webkit-scrollbar {
@@ -11,7 +12,7 @@
   @apply w-full;
 }
 
-.skillWrapper:not(:first-child) {
+/* .skillWrapper:not(:first-child) {
   @apply mt-4;
   @apply md:mt-6;
-}
+} */

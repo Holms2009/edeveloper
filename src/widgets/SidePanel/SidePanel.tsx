@@ -9,9 +9,11 @@ import { Logo, TitledField } from '../../shared/ui';
 function SidePanel() {
   return (
     <div className={classNames(styles.sidePanel, 'widget')}>
-      <Logo />
-      <div className={styles.photoWrapper}>
-        <img className={styles.photo} src={photo} alt="Фото разработчика" />
+      <div className={styles.top}>
+        <Logo />
+        <div className={styles.photoWrapper}>
+          <img className={styles.photo} src={photo} alt="Фото разработчика" />
+        </div>
       </div>
       <div className={styles.info}>
         {
