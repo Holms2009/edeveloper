@@ -6,6 +6,26 @@
   @apply text-xs leading-tight text-sky-900;
 }
 
+.title_medium {
+  @apply text-lg leading-6;
+}
+
+.title_large {
+  @apply text-2xl leading-6;
+}
+
 .text {
-  @apply text-sm leading-tight text-gray-800;
+  @apply w-fit text-sm leading-tight text-gray-800;
+}
+
+.text_medium {
+  @apply text-xl leading-5;
+}
+
+.text_large {
+  @apply text-3xl leading-5;
+}
+
+.link {
+  @apply text-gray-100 hover:underline
 }

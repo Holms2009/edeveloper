@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from './App.module.css';
 
 import { ContentTab } from './entities';
-import { Skills } from './features';
+import { Contacts, Skills } from './features';
 import { SidePanel } from './widgets';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <ContentTab name="projects" title="Проекты" isActive={tab === 'projects'} onClick={setTab}>
         </ContentTab>
         <ContentTab name="contacts" title="Контакты" isActive={tab === 'contacts'} onClick={setTab}>
+          <Contacts />
         </ContentTab>
       </div>
     </div>

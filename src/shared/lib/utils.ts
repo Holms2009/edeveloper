@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 function getNumeral(val: number, variants: string[]) {
   let n = Math.abs(val)
 
@@ -18,4 +20,35 @@ function getNumeral(val: number, variants: string[]) {
   return `${val} ${variants[2]}`;
 }
 
-export { getNumeral };
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(false);
+
+  function fixQueryString(query: string) {
+    let result = query;
+
+    if (query[0] !== '(') result = '(' + result;
+    if (query[query.length - 1] !== ')') result = result + ')';
+
+    return result;
+  }
+
+  useEffect(() => {
+    let media = window.matchMedia(fixQueryString(query));
+
+    if (media.matches !== matches) setMatches(media.matches);
+
+    function callback() {
+      setMatches(media.matches);
+    }
+
+    window.addEventListener('resize', callback);
+
+    return () => {
+      window.removeEventListener('resize', callback);
+    }
+  }, [matches, query]);
+
+  return matches;
+}
+
+export { getNumeral, useMediaQuery };

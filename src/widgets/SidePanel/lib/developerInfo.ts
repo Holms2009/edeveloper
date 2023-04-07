@@ -12,10 +12,6 @@ function getDeveloperInfo() {
       text: 'Евгений'
     },
     {
-      title: 'Отчество',
-      text: 'Александрович'
-    },
-    {
       title: 'Возраст',
       text: getAge()
     },
