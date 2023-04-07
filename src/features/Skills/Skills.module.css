@@ -1,5 +1,5 @@
 .skills {
-  @apply h-fit flex flex-col overflow-auto;
+  @apply h-fit flex flex-col;
   @apply md:h-full;
 }
 

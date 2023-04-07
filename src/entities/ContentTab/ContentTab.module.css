@@ -1,8 +1,8 @@
 .tab {
   @apply px-4 pt-14 pb-7 max-h-[1000px] shadow-xl shadow-gray-800 relative overflow-hidden grow;
   @apply transition-all duration-300;
-  @apply md:px-8 md:pt-20 md:pb-0;
-  @apply lg:max-h-full lg:p-12;
+  @apply md:px-8 md:pt-20;
+  @apply lg:max-h-full lg:p-12 lg:pb-0;
 }
 
 .tab_closed {
@@ -12,7 +12,7 @@
 }
 
 .tabContent {
-  @apply transition-all duration-300;
+  @apply h-full transition-all duration-300 overflow-y-scroll;
   @apply lg:px-6 lg:max-w-[1920px] lg:max-h-full;
 }
 
