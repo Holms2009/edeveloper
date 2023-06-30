@@ -4,6 +4,16 @@
   @apply max-md:gap-y-5;
 }
 
+.sectionTitle {
+  @apply text-3xl text-sky-900 border-b-4 border-sky-900;
+  @apply max-sm:text-2xl
+}
+
+.skillsList {
+  @apply mt-5 flex flex-col gap-3;
+  @apply max-sm:mt-4 max-sm:gap-2;
+}
+
 .skills::-webkit-scrollbar {
   display: none;
 }
@@ -11,8 +21,3 @@
 .skillWrapper {
   @apply w-full;
 }
-
-/* .skillWrapper:not(:first-child) {
-  @apply mt-4;
-  @apply md:mt-6;
-} */

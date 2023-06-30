@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 import styles from './App.module.css';
 
@@ -11,17 +12,19 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <SidePanel />
-      <div className={styles.content}>
-        <ContentTab name="skills" title="Навыки" isActive={tab === 'skills'} onClick={setTab}>
-          <Skills />
-        </ContentTab>
-        <ContentTab name="projects" title="Проекты" isActive={tab === 'projects'} onClick={setTab}>
-        </ContentTab>
-        <ContentTab name="contacts" title="Контакты" isActive={tab === 'contacts'} onClick={setTab}>
-          <Contacts />
-        </ContentTab>
-      </div>
+      <AnimatePresence initial>
+        <SidePanel />
+        <div className={styles.content}>
+          <ContentTab name="skills" title="Навыки" isActive={tab === 'skills'} onClick={setTab}>
+            <Skills />
+          </ContentTab>
+          <ContentTab name="projects" title="Проекты" isActive={tab === 'projects'} onClick={setTab}>
+          </ContentTab>
+          <ContentTab name="contacts" title="Контакты" isActive={tab === 'contacts'} onClick={setTab}>
+            <Contacts />
+          </ContentTab>
+        </div>
+      </AnimatePresence>
     </div>
   )
 }
