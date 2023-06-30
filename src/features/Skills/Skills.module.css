@@ -1,6 +1,7 @@
 .skills {
   @apply h-fit grid grid-cols-2 gap-x-20 gap-y-10;
-  @apply max-lg:grid-cols-1 max-lg:gap-y-7;
+  @apply max-xl:grid-cols-1; 
+  @apply max-lg:gap-y-7;
   @apply max-md:gap-y-5;
 }
 

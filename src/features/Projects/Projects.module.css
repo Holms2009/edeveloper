@@ -1,3 +1,5 @@
 .projects {
-  @apply grid grid-cols-3 gap-4;
+  @apply grid grid-cols-1 gap-10;
+  @apply lg:grid-cols-2 lg:gap-6;
+  @apply 2xl:grid-cols-3 xl:gap-4;
 }
