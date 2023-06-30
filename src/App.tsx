@@ -4,7 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import styles from './App.module.css';
 
 import { ContentTab } from './entities';
-import { Contacts, Skills } from './features';
+import { Contacts, Projects, Skills } from './features';
 import { SidePanel } from './widgets';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
             <Skills />
           </ContentTab>
           <ContentTab name="projects" title="Проекты" isActive={tab === 'projects'} onClick={setTab}>
+            <Projects />
           </ContentTab>
           <ContentTab name="contacts" title="Контакты" isActive={tab === 'contacts'} onClick={setTab}>
             <Contacts />

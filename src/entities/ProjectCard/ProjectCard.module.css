@@ -1,0 +1,33 @@
+.projectCard {
+  @apply flex flex-col bg-sky-600 rounded-md shadow-md hover:shadow-xl relative overflow-hidden;
+  @apply transition-all duration-300;
+}
+
+.imageWrapper {
+  @apply w-full aspect-video flex justify-center items-center;
+}
+
+.image {
+  @apply w-full h-full grayscale object-cover;
+  @apply transition-all duration-300;
+}
+
+.main {
+  @apply p-3 flex flex-col;
+}
+
+.main:last-child {
+  @apply mt-auto;
+}
+
+.title {
+  @apply text-xl font-medium leading-6 text-sky-900;
+}
+
+.description {
+  @apply my-2 text-sm leading-4;
+}
+
+.projectCard:hover .image {
+  @apply grayscale-0 w-11/12 h-5/6 rounded-md shadow-lg shadow-gray-700;
+}
