@@ -47,4 +47,13 @@ html {
 
 * {
   font-family: 'Roboto', sans-serif;
+  
+}
+
+*::-webkit-scrollbar {
+  @apply lg:w-1 lg:bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply lg:bg-sky-800 lg:rounded-md;
 }
