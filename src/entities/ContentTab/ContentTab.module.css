@@ -44,5 +44,5 @@
 }
 
 .tab_closed:hover .tabTitle {
-  @apply -translate-y-5 ;
+  @apply lg:-translate-y-5 ;
 }
