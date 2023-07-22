@@ -42,6 +42,24 @@ function Contacts() {
           openInNewWindow
           size={textSize}
         />
+        <TitledField
+          title="Мой профиль на Хабр Карьере"
+          text="https://career.habr.com/holms2009"
+          type="link"
+          href="https://career.habr.com/holms2009"
+          openInNewWindow
+          size={textSize}
+        />
+        <TitledField
+          title="Мой GitHub"
+          text="https://github.com/Holms2009"
+          type="link"
+          href="https://github.com/Holms2009"
+          openInNewWindow
+          size={textSize}
+        />
+
+
       </div>
     </div>
   )

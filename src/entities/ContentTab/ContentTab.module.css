@@ -13,14 +13,12 @@
 }
 
 .tabContent {
-  @apply h-full transition-all duration-500 overflow-y-auto overflow-x-hidden;
+  @apply h-full transition-all duration-500 overflow-y-auto overflow-x-hidden opacity-0;
   @apply lg:px-6 lg:max-h-full lg:grow;
 }
 
-.tab_closed .tabContent {
-  /* @apply max-h-0 relative shrink-0;
-  @apply lg:px-0 lg:-translate-x-full lg:w-0; */
-  @apply opacity-0;
+.tab_opened .tabContent {
+  @apply opacity-100 delay-700;
 }
 
 .titleWrapper {
