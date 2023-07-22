@@ -1,25 +1,26 @@
 .tab {
   @apply px-4 pt-14 pb-7 max-w-full max-h-[2000px] shadow-xl shadow-gray-800 relative overflow-hidden grow;
-  @apply transition-all duration-300;
+  @apply transition-all duration-500 delay-500;
   @apply md:px-6 md:pt-16;
-  @apply lg:max-h-full lg:p-12 lg:pr-4 lg:pb-0;
+  @apply lg:max-h-full lg:p-12 lg:pr-4 lg:pb-0 lg:flex;
   @apply xl:p-12;
 }
 
 .tab_closed {
   @apply max-h-0 py-5;
   @apply md:py-6;
-  @apply lg:px-6 lg:py-12 lg:grow-0 lg:max-h-full lg:max-w-[3rem];
+  @apply lg:px-6 lg:py-12 lg:max-h-full lg:max-w-[3rem];
 }
 
 .tabContent {
-  @apply h-full transition-all duration-300 overflow-y-auto overflow-x-hidden;
-  @apply lg:px-6 lg:max-h-full;
+  @apply h-full transition-all duration-500 overflow-y-auto overflow-x-hidden;
+  @apply lg:px-6 lg:max-h-full lg:grow;
 }
 
 .tab_closed .tabContent {
-  @apply max-h-0 relative;
-  @apply lg:px-0 lg:-translate-x-full;
+  /* @apply max-h-0 relative shrink-0;
+  @apply lg:px-0 lg:-translate-x-full lg:w-0; */
+  @apply opacity-0;
 }
 
 .titleWrapper {
@@ -34,8 +35,16 @@
 }
 
 .tabTitle {
-  @apply z-10 select-none;
-  @apply text-xl text-sky-900 font-semibold;
+  @apply z-10 select-none transition-all duration-300;
+  @apply text-xl text-yellow-500 font-semibold;
   @apply md:text-2xl;
   @apply lg:-rotate-90 lg:mb-10 lg:text-3xl;
+}
+
+.tab_closed .tabTitle {
+  @apply text-sky-900
+}
+
+.tab_closed:hover .tabTitle {
+  @apply -translate-y-5 ;
 }

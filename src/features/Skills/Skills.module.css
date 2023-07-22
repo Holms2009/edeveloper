@@ -6,7 +6,7 @@
 }
 
 .sectionTitle {
-  @apply text-3xl text-sky-900 border-b-4 border-sky-900;
+  @apply text-3xl text-yellow-500 border-b-4 border-yellow-500;
   @apply max-sm:text-2xl
 }
 

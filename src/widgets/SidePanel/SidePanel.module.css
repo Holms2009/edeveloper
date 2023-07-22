@@ -11,10 +11,10 @@
 
 .photoWrapper {
   @apply mt-2 w-full aspect-[4/3] shrink-0 overflow-hidden;
-  @apply grayscale rounded-lg;
+  @apply rounded-lg;
   @apply max-sm:shrink max-sm:mt-0 max-sm:rounded-md;
   @apply md:aspect-square md:transition-all md:duration-300;
-  @apply lg:hover:grayscale-0 lg:hover:shadow-md lg:hover:shadow-gray-800;
+  @apply lg:hover:shadow-md lg:hover:shadow-gray-800;
 }
 
 .photo {

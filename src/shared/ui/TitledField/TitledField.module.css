@@ -1,9 +1,9 @@
 .titledField {
-  @apply pb-1 flex flex-col gap-1 border-b-2 last:border-b-0 border-sky-900;
+  @apply pb-1 flex flex-col gap-1 border-b-2 last:border-b-0 border-yellow-500;
 }
 
 .title {
-  @apply text-xs leading-tight text-sky-900;
+  @apply text-xs leading-tight text-yellow-500;
 }
 
 .title_medium {
@@ -15,7 +15,7 @@
 }
 
 .text {
-  @apply w-fit text-sm leading-tight text-gray-800;
+  @apply w-fit text-sm leading-tight text-gray-200;
 }
 
 .text_medium {

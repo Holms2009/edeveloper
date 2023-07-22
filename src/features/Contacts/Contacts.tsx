@@ -42,22 +42,6 @@ function Contacts() {
           openInNewWindow
           size={textSize}
         />
-        <TitledField
-          title="WhatsApp"
-          text="+7(920)922-70-05"
-          type="link"
-          href="https://wa.me/9209227005"
-          openInNewWindow
-          size={textSize}
-        />
-        <TitledField
-          title="Viber"
-          text="+7(920)922-70-05"
-          type="link"
-          href="viber://chat?number=&2B9209227005"
-          openInNewWindow
-          size={textSize}
-        />
       </div>
     </div>
   )

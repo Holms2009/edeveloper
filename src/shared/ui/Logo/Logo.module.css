@@ -3,7 +3,7 @@
 }
 
 .name {
-  @apply flex justify-between font-semibold text-sky-900;
+  @apply flex justify-between font-semibold text-yellow-500;
   padding: 0 2px;
 }
 
@@ -12,5 +12,5 @@
 }
 
 .title {
-  @apply xl:text-4xl text-2xl font-bold text-sky-900 leading-none xl:leading-none;
+  @apply xl:text-4xl text-2xl font-bold text-yellow-500 leading-none xl:leading-none;
 }
