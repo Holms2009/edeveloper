@@ -12,7 +12,7 @@ function RatedSkill({ title, rating, animationDelay = 0 }: Props) {
   return (
     <div className={styles.ratedSkill}>
       <h4 className={styles.title}>{title}</h4>
-      <div className={styles.ratingWrapper}>
+      <div className={styles.ratingWrapper} title={rating + '%'}>
         <motion.div
           className={styles.rating}
           initial={{ width: 0 }}
