@@ -14,14 +14,14 @@ export const projects: TProject[] = [
     name: 'Цифровой музей архитектуры России',
     link: 'https://museum.avito.ru/',
     stack: ['JavaScript', 'PUG', 'SCSS', 'GSAP'],
-    description: '',
+    description: 'Промо-сайт для авито. Основной упор сделан на анимации. Проект завершен.',
     img: avito
   },
   {
     name: 'Code + Service',
     link: 'https://codeservice.pro',
     stack: ['React', 'Redux', 'redux-toolkit', 'React-router', 'TypeScript', 'SCSS', 'Webpack', '@tanstack/react-table'],
-    description: '',
+    description: 'Сервис подбора и найма разработчиков, дизайнеров и т.д. Проект находится в активной разработке.',
     img: codeservice
   }
 ]
