@@ -25,11 +25,4 @@ export const projects: TProject[] = [
     description: 'Лэндинг для Kitchen Consulting. По желанию клиента, сайт построен на базе конструктора Webflow. Анимация переходов между блоками - видео, управляемое из кастомного JS-кода.',
     img: kitchen
   },
-  {
-    name: 'Яндекс х Лэтуаль',
-    link: 'https://travel.yandex.ru/special/aromatour-letu',
-    stack: ['TypeScript', 'SCSS', 'PUG', 'anime.js', 'Parcel'],
-    description: 'Лэндинг для коллаборации Яндекс.Путешествия и Лэтуаль. Наиболее интересный момент - блоки с цветами. Анимированы с помощью библиотеки anime.js. Анимация работает при появлении блоков на экране + анимация при движении мышью.',
-    img: letual
-  }
 ]
